@@ -20,8 +20,8 @@ public class Animal {
         System.out.println(this.name + " is eating.");
     }
 
-    public void move() {
-
+    public void move(double speed) {
+        System.out.println(this.name + " is moving at " + speed + "mph.");
     }
 
     public String getName() {

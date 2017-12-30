@@ -18,13 +18,22 @@ public class Dog extends Animal {
     }
 
     private void chew() {
-        System.out.println(super.getName() + " is chewing its' food.");
+        System.out.println(super.getName() + " is chewing its food.");
     }
 
     @Override
     public void eat() {
-        System.out.println(super.getName() + " is hungry.");
         chew();
         super.eat();
+    }
+
+    public void walk() {
+        System.out.println(super.getName() + " is walking.") ;
+        move(5);
+    }
+
+    public void run() {
+        System.out.println(super.getName() + " is running.");
+        move(15);
     }
 }
